@@ -63,7 +63,7 @@ export const SocialLinks: React.FC = () => {
           target={social.url.startsWith('mailto:') ? undefined : '_blank'}
           rel={social.url.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
           aria-label={social.ariaLabel}
-          onClick={(e) => {
+          onClick={() => {
             if (social.name === 'Email') {
               navigator.clipboard.writeText('contato@aethersolutions.com.br');
               setCopied(true);
