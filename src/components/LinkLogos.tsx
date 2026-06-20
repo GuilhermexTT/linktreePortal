@@ -5,8 +5,8 @@ interface LogoProps extends React.SVGProps<SVGSVGElement> {
   glow?: boolean;
 }
 
-export const AetherLogo: React.FC<LogoProps> = ({ size = 48, glow = true, ...props }) => {
-  const glowFilterId = "aether-glow-logo";
+export const AdiseaLogo: React.FC<LogoProps> = ({ size = 48, glow = true, ...props }) => {
+  const glowFilterId = "adisea-glow-logo";
   return (
     <svg
       width={size}
@@ -17,7 +17,7 @@ export const AetherLogo: React.FC<LogoProps> = ({ size = 48, glow = true, ...pro
       {...props}
     >
       <defs>
-        <linearGradient id="aether-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+        <linearGradient id="adisea-grad" x1="0%" y1="100%" x2="100%" y2="0%">
           <stop offset="0%" stopColor="#3B82F6" />
           <stop offset="100%" stopColor="#00D4FF" />
         </linearGradient>
@@ -35,9 +35,9 @@ export const AetherLogo: React.FC<LogoProps> = ({ size = 48, glow = true, ...pro
         {/* Sleek futuristic A shape */}
         <path
           d="M50 12 L85 82 C86.5 85 83.5 88 80 87 L50 78 L20 87 C16.5 88 13.5 85 15 82 L50 12 Z"
-          fill="url(#aether-grad)"
+          fill="url(#adisea-grad)"
           fillOpacity="0.1"
-          stroke="url(#aether-grad)"
+          stroke="url(#adisea-grad)"
           strokeWidth="3.5"
           strokeLinejoin="round"
         />
@@ -51,7 +51,7 @@ export const AetherLogo: React.FC<LogoProps> = ({ size = 48, glow = true, ...pro
         {/* Soft crossbar */}
         <path
           d="M32 65 C44 58, 56 58, 68 65"
-          stroke="url(#aether-grad)"
+          stroke="url(#adisea-grad)"
           strokeWidth="2.5"
           strokeLinecap="round"
           strokeOpacity="0.6"
@@ -114,7 +114,7 @@ export const LunaLogo: React.FC<LogoProps> = ({ size = 48, glow = true, ...props
   );
 };
 
-export const AetherHubLogo: React.FC<LogoProps> = ({ size = 48, glow = true, ...props }) => {
+export const AdiseaHubLogo: React.FC<LogoProps> = ({ size = 48, glow = true, ...props }) => {
   const glowFilterId = "hub-glow-logo";
   return (
     <svg
@@ -142,25 +142,39 @@ export const AetherHubLogo: React.FC<LogoProps> = ({ size = 48, glow = true, ...
         )}
       </defs>
       <g filter={glow ? `url(#${glowFilterId})` : undefined}>
-        {/* Intelligent Connected Nodes / Hexagonal structure */}
-        
-        {/* Connective lines */}
-        <path d="M50 18 L77 34 L77 66 L50 82 L23 66 L23 34 Z" stroke="url(#hub-grad)" strokeWidth="1.5" strokeOpacity="0.4" />
-        <path d="M50 18 L50 82" stroke="url(#hub-grad)" strokeWidth="1.5" strokeOpacity="0.4" />
-        <path d="M23 34 L77 66" stroke="url(#hub-grad)" strokeWidth="1.5" strokeOpacity="0.4" />
-        <path d="M23 66 L77 34" stroke="url(#hub-grad)" strokeWidth="1.5" strokeOpacity="0.4" />
+        {/* Futuristic Shopping Bag Handle */}
+        <path
+          d="M38 35 C38 16, 62 16, 62 35"
+          stroke="url(#hub-grad)"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeOpacity="0.85"
+        />
 
-        {/* Central glowing hub */}
-        <circle cx="50" cy="50" r="14" fill="url(#hub-grad)" fillOpacity="0.25" stroke="url(#hub-grad)" strokeWidth="2" />
-        <circle cx="50" cy="50" r="7" fill="#00D4FF" filter="drop-shadow(0 0 6px #00D4FF)" />
+        {/* Sleek tapered shopping bag body */}
+        <path
+          d="M30 35 H70 C74 35, 75 37, 75 41 L78 74 C79 78, 77 80, 73 80 H27 C23 80, 21 78, 22 74 L25 41 C25 37, 26 35, 30 35 Z"
+          fill="url(#hub-grad)"
+          fillOpacity="0.08"
+          stroke="url(#hub-grad)"
+          strokeWidth="2.5"
+          strokeLinejoin="round"
+        />
 
-        {/* Satellite Nodes */}
-        <circle cx="50" cy="18" r="4.5" fill="#3B82F6" stroke="#00D4FF" strokeWidth="1.5" />
-        <circle cx="77" cy="34" r="4.5" fill="#3B82F6" stroke="#00D4FF" strokeWidth="1.5" />
-        <circle cx="77" cy="66" r="4.5" fill="#3B82F6" stroke="#00D4FF" strokeWidth="1.5" />
-        <circle cx="50" cy="82" r="4.5" fill="#3B82F6" stroke="#00D4FF" strokeWidth="1.5" />
-        <circle cx="23" cy="66" r="4.5" fill="#3B82F6" stroke="#00D4FF" strokeWidth="1.5" />
-        <circle cx="23" cy="34" r="4.5" fill="#3B82F6" stroke="#00D4FF" strokeWidth="1.5" />
+        {/* Internal technology/connectivity circuit lines */}
+        <path d="M50 58 L32 46" stroke="url(#hub-grad)" strokeWidth="1.5" strokeOpacity="0.5" />
+        <path d="M50 58 L68 46" stroke="url(#hub-grad)" strokeWidth="1.5" strokeOpacity="0.5" />
+        <path d="M50 58 L50 74" stroke="url(#hub-grad)" strokeWidth="1.5" strokeOpacity="0.5" />
+        <path d="M32 46 L32 64 L50 74 L68 64 L68 46" stroke="url(#hub-grad)" strokeWidth="1" strokeOpacity="0.3" strokeDasharray="3 3" />
+
+        {/* Central glowing core node */}
+        <circle cx="50" cy="58" r="11" fill="url(#hub-grad)" fillOpacity="0.25" stroke="url(#hub-grad)" strokeWidth="1.5" />
+        <circle cx="50" cy="58" r="5.5" fill="#00D4FF" filter="drop-shadow(0 0 5px #00D4FF)" />
+
+        {/* Circuit connector points (Satellite Nodes) */}
+        <circle cx="32" cy="46" r="3.5" fill="#3B82F6" stroke="#00D4FF" strokeWidth="1" />
+        <circle cx="68" cy="46" r="3.5" fill="#3B82F6" stroke="#00D4FF" strokeWidth="1" />
+        <circle cx="50" cy="74" r="3.5" fill="#3B82F6" stroke="#00D4FF" strokeWidth="1" />
       </g>
     </svg>
   );

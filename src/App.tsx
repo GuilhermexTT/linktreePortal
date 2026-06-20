@@ -29,7 +29,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen flex flex-col justify-between items-center text-white font-sans selection:bg-aether-cyan/30 selection:text-white px-4 sm:px-6 md:px-8 py-12 md:py-16">
+    <div className="relative min-h-screen flex flex-col justify-between items-center text-white font-sans selection:bg-adisea-cyan/30 selection:text-white px-4 sm:px-6 md:px-8 py-12 md:py-16">
       {/* 1. Global high-end background animations & glows */}
       <BackgroundEffects />
 
@@ -48,17 +48,17 @@ export default function App() {
           {/* Logo official */}
           <div className="relative mb-6 flex items-center justify-center">
             {/* Ambient blue aura behind the logo */}
-            <div className="absolute inset-0 bg-aether-cyan/15 blur-2xl rounded-full scale-75 pointer-events-none" />
+            <div className="absolute inset-0 bg-adisea-cyan/15 blur-2xl rounded-full scale-75 pointer-events-none" />
             <img
-              src="/logo.png"
-              alt="Aether Solutions Logo"
+              src="/LogoAdisea_SemFundo.png"
+              alt="Adisea Logo"
               className="h-24 sm:h-28 md:h-32 w-auto object-contain drop-shadow-[0_0_20px_rgba(0,212,255,0.4)] relative"
               draggable="false"
             />
           </div>
 
           {/* Subtitle */}
-          <p className="text-base sm:text-lg md:text-xl font-medium text-aether-text-muted/95 max-w-xl leading-relaxed mt-2 font-display">
+          <p className="text-base sm:text-lg md:text-xl font-medium text-adisea-text-muted/95 max-w-xl leading-relaxed mt-2 font-display">
             Construindo o futuro através de tecnologia, automação e inteligência.
           </p>
         </motion.div>
@@ -91,11 +91,11 @@ export default function App() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 0.8 }}
       >
-        <p className="text-xs sm:text-sm text-aether-text-muted/80 font-medium">
-          Feito com <span className="text-aether-cyan drop-shadow-[0_0_8px_rgba(0,212,255,0.3)]">tecnologia</span> e <span className="text-aether-blue">propósito</span>.
+        <p className="text-xs sm:text-sm text-adisea-text-muted/80 font-medium">
+          Feito com <span className="text-adisea-cyan drop-shadow-[0_0_8px_rgba(0,212,255,0.3)]">tecnologia</span> e <span className="text-adisea-blue">propósito</span>.
         </p>
-        <p className="text-[11px] sm:text-xs text-aether-text-muted/65 font-medium tracking-wide">
-          &copy; 2026 Aether Solutions. Todos os direitos reservados.
+        <p className="text-[11px] sm:text-xs text-adisea-text-muted/65 font-medium tracking-wide">
+          &copy; 2026 Adisea. Todos os direitos reservados.
         </p>
       </motion.footer>
     </div>

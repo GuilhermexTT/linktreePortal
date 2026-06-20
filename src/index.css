@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-aether-bg: #020617;
-  --color-aether-dark: #030712;
-  --color-aether-cyan: #00D4FF;
-  --color-aether-blue: #3B82F6;
-  --color-aether-text: #FFFFFF;
-  --color-aether-text-muted: #94A3B8;
+  --color-adisea-bg: #020617;
+  --color-adisea-dark: #030712;
+  --color-adisea-cyan: #00D4FF;
+  --color-adisea-blue: #3B82F6;
+  --color-adisea-text: #FFFFFF;
+  --color-adisea-text-muted: #94A3B8;
 
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
   --font-display: "Outfit", system-ui, -apple-system, sans-serif;
@@ -39,7 +39,7 @@
 /* Custom background animation and scrollbar styles */
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-aether-bg);
+  background-color: var(--color-adisea-bg);
   min-height: 100vh;
   margin: 0;
   overflow-x: hidden;
